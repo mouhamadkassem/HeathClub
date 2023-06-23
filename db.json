@@ -1,0 +1,468 @@
+{
+  "products": [
+    {
+      "id": 1
+    },
+    {
+      "id": 23
+    },
+    {
+      "id": 24
+    },
+    {
+      "id": 25
+    },
+    {
+      "id": 26
+    },
+    {
+      "id": 27
+    },
+    {
+      "id": 28
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 11
+    },
+    {
+      "id": 12
+    },
+    {
+      "id": 13
+    },
+    {
+      "id": 3
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    },
+    {
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 14
+    },
+    {
+      "id": 15
+    },
+    {
+      "id": 16
+    },
+    {
+      "id": 17
+    },
+    {
+      "id": 18
+    },
+    {
+      "id": 19
+    },
+    {
+      "id": 20
+    }
+  ],
+  "users": [
+    {
+      "id": 0.4321778103474394,
+      "cart": [
+        {
+          "quantity": 1,
+          "id": 3,
+          "imgUrl": "https://lsmedia.linker-cdn.net/62267/2022/7446130.jpeg?d=600x400",
+          "title": "Product title",
+          "price": 100,
+          "desc": "You can achieve that using multiple linear"
+        }
+      ],
+      "firstname": "ali",
+      "lastname": "ali",
+      "email": "ali@",
+      "password": "123"
+    },
+    {
+      "id": 0.30660513153665603,
+      "cart": [],
+      "firstname": "omar",
+      "lastname": "omar",
+      "email": "omar@",
+      "password": "123"
+    },
+    {
+      "id": 0.45839525014590987,
+      "cart": [],
+      "firstname": "ahmad",
+      "lastname": "li",
+      "email": "ahmad@",
+      "password": "123"
+    },
+    {
+      "id": 0.40524045890533555,
+      "cart": [
+        {
+          "quantity": 1,
+          "id": 1,
+          "imgUrl": "https:lsmedia.linker-cdn.net/62267/2022/7446130.jpeg?d=600x400",
+          "title": "Product title",
+          "price": 100,
+          "desc": "You can achieve that using multiple linear You can achieve that using multiple linear"
+        }
+      ],
+      "firstname": "mohamad",
+      "lastname": "kassem",
+      "email": "mk@gmail.com",
+      "password": "123"
+    },
+    {
+      "id": 0.18870125594318243,
+      "cart": [
+        {
+          "quantity": 1,
+          "id": 2,
+          "imgUrl": "https://lsmedia.linker-cdn.net/62267/2022/7446130.jpeg?d=600x400",
+          "title": "Product title",
+          "price": 100,
+          "desc": "You can achieve that using multiple linear"
+        }
+      ],
+      "firstname": "mohamad",
+      "lastname": "kassem",
+      "email": "mkk@",
+      "password": "123"
+    },
+    {
+      "id": 0.6260856998060806,
+      "cart": [
+        {
+          "quantity": 1,
+          "id": 24,
+          "imgUrl": "https://www.polestargarments.com/wp-content/uploads/2020/11/Sports-wear-2.jpg",
+          "title": "Product title",
+          "price": 100,
+          "desc": "You can achieve that using multiple linear You can achieve that using multiple linear",
+          "category": "clothes"
+        }
+      ],
+      "firstname": "toni",
+      "lastname": "toni",
+      "email": "toni@",
+      "password": "123"
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "part": "Full Body",
+      "imgUrl": "https://qph.cf2.quoracdn.net/main-qimg-b802bd6bbe20d351b72066c86a5b44cd-lq",
+      "desc": "some desc",
+      "tasks": [
+        {
+          "day": 1,
+          "calories": 1234,
+          "done": true,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "calories": 1234,
+          "done": false,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "calories": 1234,
+          "done": false,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "part": "Abs",
+      "imgUrl": "https://muscleevo.net/wp-content/uploads/2020/08/full-body-workout.jpg",
+      "desc": "some desc",
+      "tasks": [
+        {
+          "day": 1,
+          "calories": 1234,
+          "done": true,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "calories": 1234,
+          "done": false,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "calories": 1234,
+          "done": false,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "part": "Leg",
+      "imgUrl": "https://cdn.shopify.com/s/files/1/1876/4703/articles/shutterstock_1390975496_600x.jpg?v=1617736788",
+      "desc": "some desc",
+      "tasks": [
+        {
+          "day": 1,
+          "calories": 1234,
+          "done": true,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        },
+        {
+          "day": 2,
+          "calories": 1234,
+          "done": false,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        },
+        {
+          "day": 3,
+          "calories": 1234,
+          "done": false,
+          "exercises": [
+            {
+              "number": 1,
+              "practice": "10 push up"
+            },
+            {
+              "number": 2,
+              "practice": "10 push up"
+            },
+            {
+              "number": 3,
+              "practice": "10 push up"
+            },
+            {
+              "number": 4,
+              "practice": "10 push up"
+            },
+            {
+              "number": 5,
+              "practice": "10 push up"
+            },
+            {
+              "number": 6,
+              "practice": "10 push up"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+<div class="product" [routerLink]="['/product', product._id]">
+  <img [src]="product.imgUrl" alt="" />
+  <div class="productInfo">
+    <h2>{{ product.title }}</h2>
+    <p>{{ product.desc }}<span *ngIf="shorten">...</span></p>
+    <p class="productPrice">{{ product.price }}$</p>
+  </div>
+</div>

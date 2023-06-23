@@ -1,0 +1,72 @@
+.classesContainer {
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+
+.classes {
+  max-width: 1400px;
+  margin: auto;
+  /* background-color: red; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.class {
+  width: 45%;
+  height: 300px;
+  margin: 2%;
+  background-size: 100% 100%;
+  color: red;
+  font-size: 75px;
+  line-height: 300px;
+  padding: 0 20px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.class:hover {
+  box-shadow: 0px 0px 10px 5px crimson;
+  cursor: pointer;
+  width: 46%;
+  height: 303px;
+}
+
+@media (max-width: 1000px) {
+  .class {
+    width: 80%;
+    font-size: 60px;
+  }
+
+  .class:hover {
+    width: 85%;
+    height: 315px;
+  }
+}
+
+@media (max-width: 756px) {
+  .class {
+    width: 90%;
+    height: 265px;
+    font-size: 50px;
+    line-height: 265px;
+  }
+
+  .class:hover {
+    width: 95%;
+    height: 280px;
+  }
+}
+
+@media (max-width: 500px) {
+  .class {
+    height: 165px;
+    line-height: 165px;
+  }
+
+  .class:hover {
+    height: 180px;
+  }
+}

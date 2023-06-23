@@ -1,0 +1,199 @@
+.shopContainer {
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.shopHeader {
+  width: 100%;
+  display: flex;
+  position: relative;
+}
+
+.shopImg {
+  text-align: end;
+  height: 500px;
+  width: 50%;
+  position: absolute;
+  right: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-size: 0;
+  z-index: 0;
+}
+
+.contentDiv {
+  height: 500px;
+  width: 100%;
+  background: linear-gradient(to right, black 50%, transparent 1100px) 0 0,
+    linear-gradient(to right, black 50%, transparent 1100px) 0 100%;
+  z-index: 2;
+  color: red;
+  font-size: 80px;
+  line-height: 150px;
+  padding-left: 100px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: -5px -2px 4px white;
+}
+
+.categorie {
+  width: 100%;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.categorie h1 {
+  margin: 20px;
+  font-size: 40px;
+}
+
+.categorieBtn {
+  margin: 10px 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: crimson;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+
+.categorieBtn:hover {
+  font-weight: bold;
+  background-color: red;
+  transition: 0.5s;
+}
+
+.categorieBtn::after,
+.categorieBtn::before {
+  content: "";
+  width: 50px;
+  height: 5px;
+  background-color: white;
+  position: absolute;
+  left: -10px;
+  top: 25px;
+  rotate: 45deg;
+}
+
+.categorieBtn::before {
+  left: 5px;
+  width: 35px;
+  rotate: -45deg;
+  top: 5px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  width: 100%;
+}
+
+.productCard {
+  width: calc(25% - 40px);
+  margin: 20px;
+}
+
+@media (min-width: 1200px) and (max-width: 1600px) {
+  .container {
+    max-width: 1100px;
+  }
+  .shopImg,
+  .contentDiv {
+    height: 500px;
+
+  }
+  .contentDiv {
+    background: linear-gradient(to right, black 50%, transparent 900px) 0 0,
+      linear-gradient(to right, black 50%, transparent 900px) 0 100%;
+      font-size: 70px;
+  
+  }
+}
+@media (min-width: 800px) and (max-width: 1200px) {
+  .container {
+    max-width: 800px;
+  }
+
+  .productCard {
+    width: calc(33.3% - 30px);
+    margin: 15px;
+  }
+  .shopImg,
+  .contentDiv {
+    height: 450px;
+    
+  }
+  .contentDiv {
+    background: linear-gradient(to right, black 45%, transparent 650px) 0 0,
+      linear-gradient(to right, black 45%, transparent 650px) 0 100%;
+      font-size: 60px;
+      line-height: 145px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 800px) {
+  .container {
+    width: 100%;
+  }
+  .products {
+    justify-content: center;
+  }
+  .productCard {
+    width: calc(50% - 30px);
+    margin: 15px;
+  }
+  .shopImg,
+  .contentDiv {
+    height: 400px;
+  }
+  .contentDiv {
+    background: linear-gradient(to right, black 45%, transparent 550px) 0 0,
+      linear-gradient(to right, black 45%, transparent 550px) 0 100%;
+      font-size: 50px;
+      line-height: 135px;
+      padding-left: 70px;
+  }
+}
+@media (max-width: 600px) {
+  .productCard {
+    width: calc(100% - 30px);
+    margin: 15px;
+  }
+  .shopImg,
+  .contentDiv {
+    height: 300px;
+  }
+  .contentDiv {
+    width: 100%;
+    background: linear-gradient(to right, black 50%, transparent 350px) 0 0,
+      linear-gradient(to right, black 50%, transparent 350px) 0 100%;
+      font-size: 40px;
+      line-height: 100px;
+      padding-left: 25px;
+  }
+}
+
+@media (max-width: 400px) {
+  .shopImg,
+  .contentDiv {
+    height: 200px;
+  }
+  .contentDiv {
+    width: 100%;
+    background: linear-gradient(to right, black 50%, transparent 300px) 0 0,
+      linear-gradient(to right, black 50%, transparent 300px) 0 100%;
+      font-size: 30px;
+      line-height: 65px;
+      padding-left: 10px;
+  }
+}

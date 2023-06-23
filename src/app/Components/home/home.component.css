@@ -1,0 +1,28 @@
+.homePage {
+  width: 100%;
+  height: calc(100vh - 81px);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+  top: 80px;
+}
+
+.container {
+  min-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  color: red;
+  font-size: 30px;
+}
+
+h2 {
+  margin: 50px 0;
+  font-size: 20px;
+}
+
+

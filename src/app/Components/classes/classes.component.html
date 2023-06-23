@@ -1,0 +1,13 @@
+<div class="classesContainer">
+  <app-spiner *ngIf="loader"></app-spiner>
+  <div class="classes" *ngIf="!loader">
+    <div
+      class="class"
+      *ngFor="let class of classes"
+      [style.background-image]="'url(' + class.imgUrl + ')'"
+      (click)="ClassSelected(class._id)"
+    >
+      {{ class.part }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,119 @@
+<nav>
+  <table>
+    <tr>
+      <td class="brand">
+        <a routerLink="/">
+          <img [src]="brandImg" alt="brand" />
+        </a>
+      </td>
+      <td class="navIcon">
+        <fa-icon
+          [icon]="icon"
+          class="burgerIcon"
+          (click)="toggleShowSubnav()"
+        ></fa-icon>
+      </td>
+      <td class="empty"></td>
+      <td>
+        <a
+          routerLink="/"
+          [ngStyle]="{ color: black }"
+          (click)="ontoggle(home)"
+          >{{ home }}</a
+        >
+      </td>
+
+      <td class="empty"></td>
+      <td>
+        <a
+          routerLink="/shop"
+          [ngStyle]="{ color: black }"
+          (click)="ontoggle(shop)"
+          >{{ shop }}</a
+        >
+      </td>
+      <td class="empty"></td>
+      <td>
+        <a
+          routerLink="/classes"
+          [ngStyle]="{ color: black }"
+          (click)="ontoggle(classes)"
+          >{{ classes }}</a
+        >
+      </td>
+      <td class="empty"></td>
+      <td>
+        <a
+          routerLink="/cart"
+          [ngStyle]="{ color: black }"
+          (click)="ontoggle(cart)"
+          >{{ cart }}</a
+        >
+      </td>
+      <td class="empty"></td>
+      <td>
+        <a
+          routerLink="/contact"
+          [ngStyle]="{ color: black }"
+          (click)="ontoggle(contact)"
+          >{{ contact }}</a
+        >
+      </td>
+      <td class="empty"></td>
+      <td>
+        <button (click)="showForm(toggle)" *ngIf="!isLogin && !hideAll">
+          {{ sign }}
+        </button>
+        <button (click)="logOut()" *ngIf="isLogin && hideAll">Log Out</button>
+      </td>
+    </tr>
+  </table>
+  <div class="containerSubNav" *ngIf="showSubnav">
+    <div class="subNav">
+      <a routerLink="/" [ngStyle]="{ color: black }" (click)="ontoggle(home)">{{
+        home
+      }}</a>
+    </div>
+    <div class="subNav"></div>
+    <a
+      routerLink="/shop"
+      [ngStyle]="{ color: black }"
+      (click)="ontoggle(shop)"
+      >{{ shop }}</a
+    >
+    <div class="subNav">
+      <a
+        routerLink="/classes"
+        [ngStyle]="{ color: black }"
+        (click)="ontoggle(classes)"
+        >{{ classes }}</a
+      >
+    </div>
+
+    <div class="subNav">
+      <a
+        routerLink="/cart"
+        [ngStyle]="{ color: black }"
+        (click)="ontoggle(cart)"
+        >{{ cart }}</a
+      >
+    </div>
+
+    <div class="subNav">
+      <a
+        routerLink="/contact"
+        [ngStyle]="{ color: black }"
+        (click)="ontoggle(contact)"
+        >{{ contact }}</a
+      >
+    </div>
+
+    <div class="subNav">
+      <button (click)="showForm(toggle)" *ngIf="!isLogin && !hideAll">
+        {{ sign }}
+      </button>
+      <button (click)="logOut()" *ngIf="isLogin && hideAll">Log Out</button>
+    </div>
+  </div>
+  <app-login *ngIf="isLogin && !hideAll" (close)="showForm($event)"></app-login>
+</nav>

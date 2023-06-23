@@ -1,0 +1,33 @@
+<div class="shopContainer">
+  <div class="container">
+    <div class="shopHeader">
+      <div class="contentDiv">
+        Comfortable <br />
+        &nbsp; clothes make <br />
+        a difference
+      </div>
+      <div class="shopImg" [style.background-image]="'url(' + img + ')'"></div>
+    </div>
+    <div class="categorie">
+      <h1>Fitness & Gym Equipement</h1>
+      <button class="categorieBtn" (click)="filterProducts('clothes')">
+        Clothes
+      </button>
+      <button class="categorieBtn" (click)="filterProducts('shoes')">
+        Shoes
+      </button>
+      <button class="categorieBtn" (click)="filterProducts('equipement')">
+        Equipement
+      </button>
+    </div>
+    <app-spiner *ngIf="loader"></app-spiner>
+    <div class="products" *ngIf="!loader">
+      <app-product
+        *ngFor="let prod of products"
+        [product]="prod"
+        class="productCard"
+      ></app-product>
+      <!-- <app-product *ngFor="let prod of products" [product]='prod' class='productCard' (addItem)="addItemToCart($event)"></app-product> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="cart">
+  <div
+    class="cartContainer"
+    [ngStyle]="{ border: isEmpty ? 'none' : '2px solid red' }"
+  >
+    <div *ngIf="isEmpty" class="EmptyCart">
+      <div *ngIf="popUp" class="popUp">
+        your cart is added <fa-icon [icon]="like"></fa-icon>
+      </div>
+      <div *ngIf="!popUp">
+        <fa-icon [icon]="shopIcon"></fa-icon>
+        <h3>Your Shopping Cart Is Empty</h3>
+        <p>What do you waiting for!!</p>
+        <button routerLink="/shop">Start Shopping</button>
+      </div>
+    </div>
+    <div *ngIf="!isEmpty">
+      <div *ngFor="let item of items" class="items">
+        <div class="itemImg">
+          <img [src]="item.imgUrl" alt="" />
+          <div class="itemDetail">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.desc }}</p>
+            <p>{{ item.price }}$</p>
+          </div>
+        </div>
+        <div class="itemInfo">
+          <p>Price: {{ item.price * item.quantity }}$</p>
+          <p>Quantity: {{ item.quantity }}</p>
+        </div>
+        <div class="itemBtn">
+          <button class="increase" (click)="increase(item)">+</button>
+          <button class="decrease" (click)="decrease(item)">-</button>
+          <button class="remove" (click)="removeItem(item._id)">remove</button>
+        </div>
+      </div>
+
+      <div class="cartBtn">
+        <p>Total Cost : {{ totalCost }}</p>
+        <button class="clearBtn" (click)="clearAll()">Clear All</button>
+        <button (click)="checkout()">Checkout</button>
+      </div>
+    </div>
+  </div>
+</div>

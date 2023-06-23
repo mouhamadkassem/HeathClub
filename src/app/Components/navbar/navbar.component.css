@@ -1,0 +1,117 @@
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.75);
+}
+
+table {
+  max-width: 1400px;
+  border-spacing: 0;
+  margin: auto;
+}
+
+td {
+  white-space: nowrap;
+  height: 100%;
+  padding: 0;
+}
+
+.brand {
+  width: 100%;
+}
+
+.brand a {
+  padding: 0;
+}
+.brand a:hover {
+  background-color: white;
+}
+.empty {
+  min-width: 20px;
+}
+
+img {
+  width: 120px;
+}
+
+a {
+  text-decoration: none;
+
+  padding: 5px 10px;
+}
+
+a:hover {
+  font-size: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 3px solid black;
+  color: black;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  border: 2px solid red;
+  font-size: 20px;
+  color: red;
+  transition: 0.5s;
+}
+
+.navIcon {
+  display: none;
+}
+
+.burgerIcon {
+  padding: 10px;
+  border-radius: 5px;
+}
+.burgerIcon:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.containerSubNav {
+  display: none;
+  width: 100%;
+  text-align: end;
+  padding: 10px;
+}
+
+.subNav {
+  margin: 10px 0;
+}
+
+@media (max-width: 800px) {
+  table {
+    width: 100%;
+  }
+
+  td {
+    display: none;
+  }
+
+  .navIcon {
+    display: table-cell;
+    padding: 10px;
+    width: 1px;
+  }
+  .brand {
+    display: table-cell;
+    width: 100%;
+  }
+
+  .containerSubNav {
+    display: block;
+  }
+}

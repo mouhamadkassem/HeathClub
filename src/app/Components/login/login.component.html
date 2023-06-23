@@ -1,0 +1,92 @@
+<div class="formContainer">
+  <h1>{{ login ? "Register" : "Login" }}</h1>
+
+  <div class="formBtn">
+    <button class="signInBtn" (click)="toggleLogin()">
+      {{ !login ? "Register" : "Login" }}
+    </button>
+    <button class="closeBtn" (click)="onClose()">Close</button>
+  </div>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+    <div *ngIf="reqMessage" class="reqMessage">fill all fields is required</div>
+    <label for="fName" *ngIf="login">First Name</label>
+    <input
+      type="text"
+      name="fName"
+      id="fName"
+      placeholder="First Name"
+      *ngIf="login"
+      formControlName="firstname"
+    />
+    <div *ngIf="login">
+      <div
+        *ngIf="
+          myForm.controls['firstname'].invalid &&
+          myForm.controls['firstname'].touched
+        "
+        class="requiredField"
+      >
+        This field is required.
+      </div>
+    </div>
+
+    <label for="lName" *ngIf="login">Last Name</label>
+    <input
+      type="text"
+      name="lName"
+      id="lName"
+      placeholder="Last Name"
+      *ngIf="login"
+      formControlName="lastname"
+    />
+    <div *ngIf="login">
+      <div
+        *ngIf="
+          myForm.controls['lastname'].invalid &&
+          myForm.controls['lastname'].touched
+        "
+        class="requiredField"
+      >
+        This field is required.
+      </div>
+    </div>
+
+    <label for="email">Email</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      placeholder="Email"
+      formControlName="email"
+    />
+    <div
+      *ngIf="
+        myForm.controls['email'].invalid && myForm.controls['email'].touched
+      "
+      class="requiredField"
+    >
+      This field is required.
+    </div>
+    <label for="pass">Password</label>
+    <input
+      type="password"
+      name="pass"
+      id="pass"
+      placeholder="Password"
+      formControlName="password"
+    />
+    <div
+      *ngIf="
+        myForm.controls['password'].invalid &&
+        myForm.controls['password'].touched
+      "
+      class="requiredField"
+    >
+      This field is required.
+    </div>
+    <div *ngIf="isNotValid" class="isValid requiredField">
+      please fill all data
+    </div>
+    <button type="submit" class="submit">Submit</button>
+  </form>
+</div>

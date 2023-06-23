@@ -1,0 +1,96 @@
+.formContainer {
+  z-index: 10;
+  width: 500px;
+  padding: 20px;
+  position: absolute;
+  top: 500%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: 3px solid red;
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+input,
+label {
+  display: block;
+}
+
+label {
+  text-align: start;
+  margin-top: 10px;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.requiredField {
+  color: darkred;
+}
+
+.isValid {
+  margin-top: 20px;
+}
+
+.formBtn {
+  position: absolute;
+  right: 5%;
+  top: 20px;
+}
+.closeBtn,
+.signInBtn {
+  border: none;
+  background-color: transparent;
+  color: rgb(177, 13, 13);
+  transition: 0.3s;
+  margin: 0 10px;
+  padding: 5px 10px;
+}
+
+.signInBtn {
+  border: 2px solid red;
+  color: red;
+  border-radius: 5px;
+}
+
+.submit {
+  padding: 5px 20px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.submit:hover {
+  background-color: red;
+}
+
+button:hover {
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.reqMessage {
+  color: red;
+}

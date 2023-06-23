@@ -1,0 +1,106 @@
+.classContainer {
+  width: 100%;
+  position: relative;
+  top: 100px;
+}
+
+.class {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+
+.class img {
+  width: 600px;
+  height: 400px;
+  border: 5px solid red;
+  margin: 20px;
+}
+
+.class h1 {
+  font-size: 30px;
+  color: crimson;
+}
+
+.class p {
+  margin: 20px;
+}
+
+.task {
+  width: 60%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 10px 30px;
+}
+
+.task h2 {
+  font-size: 20px;
+  color: crimson;
+}
+
+.task button {
+  margin: 20px;
+  padding: 10px;
+  background-color: crimson;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.task button:hover {
+  background-color: red;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.toast {
+  width: 300px;
+  text-align: center;
+  background-color: red;
+  padding: 10px;
+
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .class img {
+    width: 550px;
+    height: 350px;
+  }
+  .task {
+    width: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .task h2 {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .class img {
+    width: 450px;
+    height: 250px;
+  }
+}
+@media (max-width: 550px) {
+  .class img {
+    width: 350px;
+    height: 200px;
+  }
+}
+@media (max-width: 450px) {
+  .class img {
+    width: 350px;
+    height: 200px;
+    margin: 5px;
+  }
+}

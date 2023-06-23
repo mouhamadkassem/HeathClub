@@ -1,0 +1,51 @@
+<div class="contactContainer">
+  <div *ngIf="popUp" class="popUp">
+    Your message is received with thanks , you can send new message after one
+    minute
+  </div>
+  <form action="submit" #myForm="ngForm" (ngSubmit)="onSubmit()" *ngIf="!popUp">
+    <div *ngIf="reqMessage" class="reqMessage">fill all data required</div>
+    <div class="inputContainer">
+      <label for="email">From</label>
+      <input
+        type="text"
+        placeholder="Your Email"
+        id="email"
+        name="email"
+        [(ngModel)]="formData.email"
+        required
+      />
+      <div
+        *ngIf="
+          myForm.controls['email']?.touched && myForm.controls['email'].invalid
+        "
+        class="required"
+      >
+        Email is required.
+      </div>
+    </div>
+
+    <div class="inputContainer">
+      <label for="message">Write Message</label>
+      <textarea
+        type="text"
+        placeholder="Message..."
+        id="message"
+        name="message"
+        [(ngModel)]="formData.message"
+        required
+      ></textarea>
+      <div
+        *ngIf="
+          myForm.controls['message']?.touched &&
+          myForm.controls['message'].invalid
+        "
+        class="required"
+      >
+        message is required.
+      </div>
+    </div>
+
+    <button type="submit">Send</button>
+  </form>
+</div>
