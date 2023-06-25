@@ -7,7 +7,7 @@ import { Classes } from 'src/interface';
   providedIn: 'root',
 })
 export class ClassesService {
-  apiUrl: string = 'http://localhost:3000/class';
+  apiUrl: string = 'https://health-club.onrender.com/class';
 
   constructor(private http: HttpClient) {}
 

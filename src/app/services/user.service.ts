@@ -15,7 +15,7 @@ const httpOptions = {
 export class UserService {
   constructor(private http: HttpClient) {}
 
-  apiUrl: string = 'http://localhost:3000';
+  apiUrl: string = 'https://health-club.onrender.com';
 
   onRegister(newUser: User) {
     return this.http.post<User>(
