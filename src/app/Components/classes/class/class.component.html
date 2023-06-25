@@ -10,7 +10,7 @@
       class="task"
       [ngStyle]="{
         'box-shadow':
-          !task.done && (tasks[i - 1]?.done || i == 0) && progress
+          !task.done && (tasks[i - 1].done || i == 0) && progress
             ? '0px 0px 10px 5px red'
             : '0px 0px 10px 5px black'
       }"
@@ -19,7 +19,7 @@
         <h2>Day {{ task.day }}- Calories {{ task.calories }}</h2>
         <button
           *ngIf="
-            (!task.done && tasks[i - 1]?.done) || (!tasks[0]?.done && i == 0)
+            (!task.done && tasks[i - 1].done) || (!tasks[0].done && i == 0)
           "
           (click)="start(class.part)"
         >
