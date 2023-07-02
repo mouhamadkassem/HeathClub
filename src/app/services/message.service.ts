@@ -11,7 +11,7 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class MessageService {
-  apiUrl = 'https://health-club.onrender.com';
+  apiUrl = 'https://health-club-ihgy.onrender.com';
   constructor(private http: HttpClient) {}
 
   sendMessage(message: any) {

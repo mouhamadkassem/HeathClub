@@ -13,7 +13,7 @@ const httpOptions = {
   providedIn: 'root',
 })
 export class ProductsService {
-  apiUrl: string = 'https://health-club.onrender.com/shop';
+  apiUrl: string = 'https://health-club-ihgy.onrender.com/shop';
 
   constructor(private http: HttpClient) {}
 

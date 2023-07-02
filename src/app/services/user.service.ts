@@ -15,7 +15,7 @@ const httpOptions = {
 export class UserService {
   constructor(private http: HttpClient) {}
 
-  apiUrl: string = 'https://health-club.onrender.com';
+  apiUrl: string = 'https://health-club-ihgy.onrender.com';
 
   onRegister(newUser: User) {
     return this.http.post<User>(
