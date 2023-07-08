@@ -1,5 +1,5 @@
 <div class="productDetailsContainer">
-  <app-pop-up *ngIf="showPopUp"></app-pop-up>
+  <app-pop-up *ngIf="showPopUp" [scroll]="scroll"></app-pop-up>
   <app-spiner *ngIf="loader"></app-spiner>
   <div class="productDetails" *ngIf="!loader">
     <img [src]="product.imgUrl" alt="img" />

@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-pop-up',
   templateUrl: './pop-up.component.html',
-  styleUrls: ['./pop-up.component.css']
+  styleUrls: ['./pop-up.component.css'],
 })
-export class PopUpComponent {
+export class PopUpComponent implements OnInit {
+  @Input() scroll!: Number;
 
+  ngOnInit(): void {
+    this.scroll = +this.scroll - 80;
+  }
 }

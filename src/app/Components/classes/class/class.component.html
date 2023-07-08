@@ -1,5 +1,5 @@
 <div class="classContainer">
-  <app-pop-up *ngIf="showPopUp"></app-pop-up>
+  <app-pop-up *ngIf="showPopUp" [scroll]="scroll"></app-pop-up>
   <app-spiner *ngIf="loader"></app-spiner>
   <div class="class" *ngIf="!loader">
     <img [src]="class.imgUrl" alt="img" />

@@ -16,7 +16,6 @@ export class LoginComponent implements OnInit {
   isNotValid: boolean = false;
   reqMessage: boolean = false;
 
-  // users!: User[];
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService

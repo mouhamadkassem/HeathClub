@@ -7,7 +7,6 @@
 .classes {
   max-width: 1400px;
   margin: auto;
-  /* background-color: red; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;

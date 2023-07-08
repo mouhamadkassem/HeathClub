@@ -17,6 +17,7 @@ export class ProductDetailsComponent implements OnInit {
   showPopUp: boolean = false;
   added: boolean = false;
   like = faThumbsUp;
+  scroll!: Number;
 
   constructor(
     private productsService: ProductsService,
@@ -37,6 +38,8 @@ export class ProductDetailsComponent implements OnInit {
 
   addToCart() {
     if (!this.userLogin.email) {
+      const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      this.scroll = scrollY;
       this.showPopUp = true;
       setTimeout(() => {
         this.showPopUp = false;

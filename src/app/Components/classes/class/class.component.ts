@@ -22,6 +22,7 @@ export class ClassComponent implements OnInit {
   hours!: Number;
   minutes!: Number;
   showPopUp: boolean = false;
+  scroll!: Number;
 
   constructor(
     private route: ActivatedRoute,
@@ -57,6 +58,9 @@ export class ClassComponent implements OnInit {
 
   start(part: string) {
     if (!this.userLogin.email) {
+      const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+      this.scroll = scrollY;
+
       this.showPopUp = true;
       setTimeout(() => {
         this.showPopUp = false;

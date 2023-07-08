@@ -53,6 +53,7 @@ export class NavbarComponent implements OnInit {
   }
 
   showForm(user: any) {
+    this.showSubnav = false;
     if (user?.email) {
       localStorage.setItem('userLogin', JSON.stringify(user));
       this.isLogin = true;
@@ -68,5 +69,6 @@ export class NavbarComponent implements OnInit {
     localStorage.clear();
     this.isLogin = false;
     this.hideAll = false;
+    this.showSubnav = false;
   }
 }

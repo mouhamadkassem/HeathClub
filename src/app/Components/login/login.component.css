@@ -94,3 +94,14 @@ button:hover {
 .reqMessage {
   color: red;
 }
+
+@media (max-width: 800px) {
+  .formContainer {
+    width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .formContainer {
+    width: 300px;
+  }
+}
